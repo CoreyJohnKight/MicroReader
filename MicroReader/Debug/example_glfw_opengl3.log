@@ -1,10 +1,4 @@
-﻿  imgui_impl_glfw.cpp
-  imgui_impl_opengl3.cpp
-  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
-  main.cpp
+﻿  AppRuntime.cpp
+  Application.cpp
   Generating Code...
   example_glfw_opengl3.vcxproj -> D:\Repos\MicroReader\MicroReader\Debug\MicroReader.exe

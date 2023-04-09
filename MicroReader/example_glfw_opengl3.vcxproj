@@ -156,6 +156,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="AppRuntime.cpp" />
     <ClCompile Include="libs\imgui\backends\imgui_impl_glfw.cpp" />
     <ClCompile Include="libs\imgui\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="libs\imgui\imgui.cpp" />
@@ -166,6 +168,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="AppRuntime.h" />
     <ClInclude Include="libs\imgui\backends\imgui_impl_glfw.h" />
     <ClInclude Include="libs\imgui\backends\imgui_impl_opengl3.h" />
     <ClInclude Include="libs\imgui\backends\imgui_impl_opengl3_loader.h" />

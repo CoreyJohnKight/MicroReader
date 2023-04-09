@@ -4,14 +4,20 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{20b90ce4-7fcb-4731-b9a0-075f875de82d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sources">
+    <Filter Include="Headers">
+      <UniqueIdentifier>{e6f91e9b-40ca-426b-8dc3-d687630bb1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImguiSources">
       <UniqueIdentifier>{f18ab499-84e1-499f-8eff-9754361e0e52}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{b8f2a9d7-292f-4105-b31a-85b0a5f12e95}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
     </ClCompile>
     <ClCompile Include="libs\imgui\imgui.cpp">
       <Filter>imgui</Filter>
@@ -29,10 +35,16 @@
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="libs\imgui\backends\imgui_impl_glfw.cpp">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
     </ClCompile>
     <ClCompile Include="libs\imgui\backends\imgui_impl_opengl3.cpp">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="AppRuntime.cpp">
+      <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,13 +58,19 @@
       <Filter>imgui</Filter>
     </ClInclude>
     <ClInclude Include="libs\imgui\backends\imgui_impl_glfw.h">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
     </ClInclude>
     <ClInclude Include="libs\imgui\backends\imgui_impl_opengl3.h">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
     </ClInclude>
     <ClInclude Include="libs\imgui\backends\imgui_impl_opengl3_loader.h">
-      <Filter>sources</Filter>
+      <Filter>ImguiSources</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AppRuntime.h">
+      <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
