@@ -12,6 +12,7 @@ namespace MicroLab
     }
     void RenderUI()
 	{
+        OnResize();
         AppRuntime::getInstance().currentPage->RenderPage();
 
         //bool* open = &AppRuntime::getInstance().p_open;
@@ -42,7 +43,12 @@ namespace MicroLab
         //}
         //ImGui::End();
 
-		//ImGui::ShowDemoWindow();
+		ImGui::ShowDemoWindow();
 	}
+
+    void OnResize()
+    {
+        AppRuntime::getInstance().currentPage->ResizeComponents();
+    }
 
 }

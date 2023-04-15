@@ -5,7 +5,13 @@
 
 namespace MicroLab
 {
-	void Page_HomePage::RenderPage()
+    //Constructor
+    Page_HomePage::Page_HomePage()
+    {
+        Page_HomePage::ResizeComponents();
+    }
+
+    void Page_HomePage::RenderPage()
 	{
         static bool use_work_area = true;
         static ImGuiWindowFlags flags = ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
@@ -18,8 +24,29 @@ namespace MicroLab
 
         if (ImGui::Begin("Example: Fullscreen window", NULL, flags))
         {
-
+            static int clicked = 0;
+            ImGui::NewLine();
+            ImGui::NewLine();
+            ImGui::NewLine();
+            ImGui::NewLine();
+            ImGui::NewLine();
+            ImGui::NewLine();
+            ImGui::SameLine(openButton.position.x);
+            if (ImGui::Button("Button", openButton.size ))
+                clicked++;
+            if (clicked & 1)
+            {
+                ImGui::Text("Thanks for clicking me!");
+            }
         }
         ImGui::End();
 	}
+
+    void Page_HomePage::ResizeComponents()
+    {
+        const ImGuiViewport* viewport = ImGui::GetMainViewport();
+
+        openButton.size = {(viewport->WorkSize.x / 3) * 2, viewport->WorkSize.y  / 4};
+        openButton.position = { (viewport->WorkSize.x / 2) - (openButton.size.x / 2), 0 };
+    }
 }
