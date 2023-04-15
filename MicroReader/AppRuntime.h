@@ -9,7 +9,7 @@ namespace MicroLab
 	public:
 
 		static AppRuntime& getInstance();
-		static Abstract_Page& currentPage;
+		static std::unique_ptr<Abstract_Page> currentPage;
 
 		bool p_open;
 

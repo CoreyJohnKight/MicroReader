@@ -78,8 +78,5 @@
     <ClInclude Include="Abstract_Page.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Page_HomePage.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
