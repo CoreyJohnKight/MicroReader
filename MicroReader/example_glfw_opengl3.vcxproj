@@ -166,8 +166,10 @@
     <ClCompile Include="libs\imgui\imgui_tables.cpp" />
     <ClCompile Include="libs\imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Page_HomePage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abstract_Page.h" />
     <ClInclude Include="Application.h" />
     <ClInclude Include="AppRuntime.h" />
     <ClInclude Include="libs\imgui\backends\imgui_impl_glfw.h" />
@@ -176,6 +178,7 @@
     <ClInclude Include="libs\imgui\imconfig.h" />
     <ClInclude Include="libs\imgui\imgui.h" />
     <ClInclude Include="libs\imgui\imgui_internal.h" />
+    <ClInclude Include="Page_HomePage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

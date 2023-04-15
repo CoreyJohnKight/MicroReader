@@ -1,5 +1,6 @@
 #pragma once
 #include <memory>
+#include "Abstract_Page.h"
 
 namespace MicroLab
 {
@@ -8,6 +9,7 @@ namespace MicroLab
 	public:
 
 		static AppRuntime& getInstance();
+		static Abstract_Page& currentPage;
 
 		bool p_open;
 

@@ -1,4 +1,4 @@
-﻿  AppRuntime.cpp
-  Application.cpp
+﻿  Application.cpp
+  AppRuntime.cpp
   Generating Code...
   example_glfw_opengl3.vcxproj -> D:\Repos\MicroReader\MicroReader\Debug\MicroReader.exe
