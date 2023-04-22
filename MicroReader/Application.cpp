@@ -53,4 +53,9 @@ namespace MicroLab
         AppRuntime::getInstance().GetCurrentPage().ResizeComponents();
     }
 
+    void Think()
+    {
+        AppRuntime::ProcessEvents();
+    }
+
 }

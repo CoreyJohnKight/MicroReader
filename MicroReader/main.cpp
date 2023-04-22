@@ -167,6 +167,8 @@ int main(int, char**)
         }
 
         glfwSwapBuffers(window);
+
+        MicroLab::Think();
     }
 #ifdef __EMSCRIPTEN__
     EMSCRIPTEN_MAINLOOP_END;

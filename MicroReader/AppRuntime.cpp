@@ -2,10 +2,11 @@
 
 namespace MicroLab
 {
-	// Static declarations
+	// Static forward declarations
 	std::unique_ptr<AppRuntime> AppRuntime::instance = nullptr;
 	std::vector<std::unique_ptr<Abstract_Page>> AppRuntime::pages;
 	int AppRuntime::currentPageIndex = 0;
+	std::queue<AppRuntime::Event> eventQueue;
 
 	// Singleton Instance 
 	AppRuntime& AppRuntime::getInstance()
@@ -28,6 +29,11 @@ namespace MicroLab
 		return *(pages.at(currentPageIndex));
 	}
 
+	void AppRuntime::PushEvent(const Event &e)
+	{
+		eventQueue.push(e);
+	}
+
 	// Construction/Initialization
 	AppRuntime::AppRuntime()
 	{
@@ -38,5 +44,14 @@ namespace MicroLab
 		// Push homepage to index 0
 		pages.push_back(std::unique_ptr<Abstract_Page>(new Page_HomePage));
 		currentPageIndex = 0;
+	}
+	void AppRuntime::ProcessEvents()
+	{
+		while (!eventQueue.empty())
+		{
+			Event event = eventQueue.front();
+			event();
+			eventQueue.pop();
+		}
 	}
 }

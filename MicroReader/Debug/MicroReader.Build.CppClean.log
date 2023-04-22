@@ -1,6 +1,6 @@
 d:\repos\microreader\microreader\debug\vc143.pdb
 d:\repos\microreader\microreader\debug\vc143.idb
-d:\repos\microreader\microreader\debug\page_homepage.obj
+d:\repos\microreader\microreader\debug\page_heightmappage.obj
 d:\repos\microreader\microreader\debug\main.obj
 d:\repos\microreader\microreader\debug\imgui_widgets.obj
 d:\repos\microreader\microreader\debug\imgui_tables.obj
@@ -11,13 +11,17 @@ d:\repos\microreader\microreader\debug\imgui_impl_opengl3.obj
 d:\repos\microreader\microreader\debug\imgui_impl_glfw.obj
 d:\repos\microreader\microreader\debug\appruntime.obj
 d:\repos\microreader\microreader\debug\application.obj
-d:\repos\microreader\microreader\debug\microreader.ilk
-d:\repos\microreader\microreader\debug\microreader.exe
+d:\repos\microreader\microreader\debug\page_homepage.obj
 d:\repos\microreader\microreader\debug\microreader.pdb
 d:\repos\microreader\microreader\debug\example_glfw_opengl3.vcxproj.filelistabsolute.txt
 d:\repos\microreader\microreader\debug\microreader.tlog\cl.command.1.tlog
 d:\repos\microreader\microreader\debug\microreader.tlog\cl.read.1.tlog
 d:\repos\microreader\microreader\debug\microreader.tlog\cl.write.1.tlog
+d:\repos\microreader\microreader\debug\microreader.tlog\link-cvtres.read.1.tlog
+d:\repos\microreader\microreader\debug\microreader.tlog\link-cvtres.write.1.tlog
+d:\repos\microreader\microreader\debug\microreader.tlog\link-rc.read.1.tlog
+d:\repos\microreader\microreader\debug\microreader.tlog\link-rc.write.1.tlog
 d:\repos\microreader\microreader\debug\microreader.tlog\link.command.1.tlog
 d:\repos\microreader\microreader\debug\microreader.tlog\link.read.1.tlog
+d:\repos\microreader\microreader\debug\microreader.tlog\link.read.2.tlog
 d:\repos\microreader\microreader\debug\microreader.tlog\link.write.1.tlog
