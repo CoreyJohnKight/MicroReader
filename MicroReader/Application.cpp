@@ -5,15 +5,17 @@
 
 namespace MicroLab
 {
+    
     void Init()
     {
-        //Enforce construction
         AppRuntime::getInstance();
+        ////Enforce construction
+        //appRuntime = AppRuntime::getInstance();
     }
     void RenderUI()
 	{
         OnResize();
-        AppRuntime::getInstance().currentPage->RenderPage();
+        AppRuntime::getInstance().GetCurrentPage().RenderPage();
 
         //bool* open = &AppRuntime::getInstance().p_open;
         //static bool use_work_area = true;
@@ -48,7 +50,7 @@ namespace MicroLab
 
     void OnResize()
     {
-        AppRuntime::getInstance().currentPage->ResizeComponents();
+        AppRuntime::getInstance().GetCurrentPage().ResizeComponents();
     }
 
 }

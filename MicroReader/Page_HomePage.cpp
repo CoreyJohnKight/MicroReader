@@ -32,7 +32,7 @@ namespace MicroLab
             ImGui::NewLine();
             ImGui::NewLine();
             ImGui::SameLine(openButton.position.x);
-            if (ImGui::Button("Button", openButton.size ))
+            if (ImGui::Button("Open Heightmap Generator", openButton.size ))
                 clicked++;
             if (clicked & 1)
             {
