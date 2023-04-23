@@ -16,7 +16,6 @@ namespace MicroLab
 	{
 		ImVec2 position;
 		ImVec2 size;
-		bool clickedThisFrame;
 	
 	}t_FixedComponent;
 
@@ -30,6 +29,14 @@ namespace MicroLab
 	
 	private:
 		t_FixedComponent openButton;
+	};
+
+	class Page_HeightmapPage : public Abstract_Page
+	{
+	public:
+		Page_HeightmapPage();
+		void RenderPage() override;
+		void ResizeComponents() override;
 	};
 }
 

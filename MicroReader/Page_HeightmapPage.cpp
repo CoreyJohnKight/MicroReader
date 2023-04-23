@@ -1,6 +1,6 @@
 #include <imgui.h>
 
-#include "Page_HeightmapPage.h"
+#include "Abstract_Page.h"
 
 namespace MicroLab
 {
