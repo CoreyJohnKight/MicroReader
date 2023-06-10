@@ -24,7 +24,6 @@ namespace MicroLab
 
         if (ImGui::Begin("Example: Fullscreen window", NULL, flags))
         {
-            static int clicked = 0;
             ImGui::NewLine();
             ImGui::NewLine();
             ImGui::NewLine();
@@ -32,11 +31,9 @@ namespace MicroLab
             ImGui::NewLine();
             ImGui::NewLine();
             ImGui::SameLine(openButton.position.x);
-            if (ImGui::Button("Open Heightmap Generator", openButton.size ))
-                clicked++;
-            if (clicked & 1)
+            if (ImGui::Button("Open Heightmap Generator", openButton.size))
             {
-                ImGui::Text("Thanks for clicking me!");
+                AppRuntime::getInstance().PushEvent([this]() {this->OnButtonClicked(); });
             }
         }
         ImGui::End();
@@ -44,9 +41,12 @@ namespace MicroLab
 
     void Page_HomePage::ResizeComponents()
     {
-        const ImGuiViewport* viewport = ImGui::GetMainViewport();
+        openButton.size = {(Abstract_Page::viewport->WorkSize.x / 3) * 2, Abstract_Page::viewport->WorkSize.y  / 4};
+        openButton.position = { (Abstract_Page::viewport->WorkSize.x / 2) - (openButton.size.x / 2), 0 };
+    }
 
-        openButton.size = {(viewport->WorkSize.x / 3) * 2, viewport->WorkSize.y  / 4};
-        openButton.position = { (viewport->WorkSize.x / 2) - (openButton.size.x / 2), 0 };
+    void Page_HomePage::OnButtonClicked(void)
+    {
+        AppRuntime::OpenPage<Page_HeightmapPage>();
     }
 }

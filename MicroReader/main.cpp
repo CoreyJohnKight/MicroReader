@@ -3,6 +3,7 @@
 // If you are new to Dear ImGui, read documentation from the docs/ folder + read the top of imgui.cpp.
 // Read online: https://github.com/ocornut/imgui/tree/master/docs
 
+#include <windows.h>
 #include "Application.h"
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
@@ -31,8 +32,8 @@ static void glfw_error_callback(int error, const char* description)
     fprintf(stderr, "GLFW Error %d: %s\n", error, description);
 }
 
-// Main code
-int main(int, char**)
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
@@ -167,6 +168,8 @@ int main(int, char**)
         }
 
         glfwSwapBuffers(window);
+
+        MicroLab::Think();
     }
 #ifdef __EMSCRIPTEN__
     EMSCRIPTEN_MAINLOOP_END;

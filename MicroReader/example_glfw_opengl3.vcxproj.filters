@@ -49,6 +49,9 @@
     <ClCompile Include="Page_HomePage.cpp">
       <Filter>Src</Filter>
     </ClCompile>
+    <ClCompile Include="Page_HeightmapPage.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libs\imgui\imconfig.h">
@@ -76,6 +79,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="Abstract_Page.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Page_HeightmapPage.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

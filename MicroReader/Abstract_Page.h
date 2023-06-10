@@ -1,9 +1,12 @@
 #pragma once
 #include "imgui.h"
+#include <string>
 namespace MicroLab
 {
 	class Abstract_Page
 	{
+	protected:
+		const ImGuiViewport* viewport = ImGui::GetMainViewport();
 	public:
 		virtual void RenderPage() = 0;
 		virtual void ResizeComponents() = 0;
@@ -22,10 +25,18 @@ namespace MicroLab
 		Page_HomePage();
 		void RenderPage() override;
 		void ResizeComponents() override;
-
+		void OnButtonClicked(void);
 	
 	private:
 		t_FixedComponent openButton;
+	};
+
+	class Page_HeightmapPage : public Abstract_Page
+	{
+	public:
+		Page_HeightmapPage();
+		void RenderPage() override;
+		void ResizeComponents() override;
 	};
 }
 
