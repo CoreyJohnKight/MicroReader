@@ -1,13 +1,1 @@
-﻿  AppRuntime.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\memory(3167,9): warning C5205: delete of an abstract class 'MicroLab::Abstract_Page' that has a non-virtual destructor results in undefined behavior
-D:\Repos\MicroReader\MicroReader\Abstract_Page.h(6,8): message : see declaration of 'MicroLab::Abstract_Page'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\memory(3165,23): message : while compiling class template member function 'void std::default_delete<MicroLab::Abstract_Page>::operator ()(_Ty *) noexcept const'
-          with
-          [
-              _Ty=MicroLab::Abstract_Page
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\memory(3278,33): message : see the first reference to 'std::default_delete<MicroLab::Abstract_Page>::operator ()' in 'std::unique_ptr<MicroLab::Abstract_Page,std::default_delete<MicroLab::Abstract_Page>>::~unique_ptr'
-D:\Repos\MicroReader\MicroReader\AppRuntime.cpp(42,18): message : see the first reference to 'std::unique_ptr<MicroLab::Abstract_Page,std::default_delete<MicroLab::Abstract_Page>>::~unique_ptr' in 'MicroLab::AppRuntime::AppRuntime'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\memory(3202): message : see reference to class template instantiation 'std::default_delete<MicroLab::Abstract_Page>' being compiled
-D:\Repos\MicroReader\MicroReader\AppRuntime.cpp(26,39): message : see reference to class template instantiation 'std::unique_ptr<MicroLab::Abstract_Page,std::default_delete<MicroLab::Abstract_Page>>' being compiled
-  example_glfw_opengl3.vcxproj -> D:\Repos\MicroReader\MicroReader\Debug\MicroReader.exe
+﻿  example_glfw_opengl3.vcxproj -> D:\Repos\MicroReader\MicroReader\Debug\MicroReader.exe
