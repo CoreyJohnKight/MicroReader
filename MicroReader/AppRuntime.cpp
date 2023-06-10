@@ -13,7 +13,7 @@ namespace MicroLab
 	{
 		if (!instance)
 		{
-			instance = std::unique_ptr<AppRuntime>(new AppRuntime);
+			instance = std::make_unique<AppRuntime>();
 		}
 
 		return *instance;
@@ -39,7 +39,7 @@ namespace MicroLab
 
 		// Pointer to active page, initialized to home page
 		// Push homepage to index 0
-		pages.push_back(std::unique_ptr<Abstract_Page>(new Page_HomePage));
+		pages.push_back(std::make_unique<Page_HomePage>());
 		currentPageIndex = 0;
 	}
 	
@@ -74,7 +74,7 @@ namespace MicroLab
 			i++;
 		}
 		std::cout << "Page not found, Creating new Page" << std::endl;
-		pages.push_back(std::unique_ptr<Abstract_Page>(new Page_HeightmapPage));
+		pages.push_back(std::make_unique<Page_HeightmapPage>());
 
 		i = 0;
 		for (const auto& ptr : pages)

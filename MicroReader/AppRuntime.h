@@ -10,6 +10,7 @@ namespace MicroLab
 	class AppRuntime
 	{
 	public:
+		AppRuntime();
 		typedef std::function<void()> Event;
 
 		static AppRuntime& getInstance();
@@ -24,7 +25,6 @@ namespace MicroLab
 		static void OpenPage();
 
 	private:
-		AppRuntime();
 		static std::unique_ptr<AppRuntime> instance;
 		static int currentPageIndex;
 		static std::queue<AppRuntime::Event> eventQueue;
